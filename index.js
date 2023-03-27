@@ -12,6 +12,7 @@ bookmark.addEventListener("click", () => {
 });
 
 // TOOGLE FUNCTIONALITY - ANSWER BUTTON
+// if statement to check if "hidden" is there or not >> if so: Show Answer, if not: Hide Answer
 
 const button = document.querySelector('[data-js="button"]');
 const hiddenAnswer = document.querySelector('[data-js="hidden-answer"]');
@@ -25,8 +26,6 @@ button.addEventListener("click", () => {
     button.textContent = "Hide answer";
   }
 });
-
-// if statement to check if "hidden" is there or not >> if so: Show Answer, if not: Hide Answer
 
 // const bookmark = document.querySelector('[data-js="bookmark-1"]');
 
