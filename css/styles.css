@@ -44,12 +44,13 @@ main {
   display: flex;
   background-color: #ffbf81;
   width: 300px;
-  height: 200px;
+  height: 220px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   margin-top: 10px;
+  margin-left: 35px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -103,6 +104,49 @@ main {
 #question-card-4 {
   margin-bottom: 100px;
 }
+
+/* FORM */
+label {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+textarea {
+  display: block;
+  background-color: #ffbf81;
+  border: 2px solid #ffbf81;
+  border-radius: none;
+}
+
+.character-count {
+  font-size: 12px;
+  float: right;
+}
+
+input {
+  display: block;
+  background-color: #ffbf81;
+  border: 2px solid #ffbf81;
+  border-radius: none;
+}
+
+button {
+  background-color: #ffdc5e;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* FOOTER NAVBAR */
 
 .footer-navbar {
