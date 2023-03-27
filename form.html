@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-base">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <form>
+        <label for="your-question">Your Question:</label>
+        <textarea
+          name="your-question"
+          class="your-question"
+          cols="30"
+          rows="5"
+          maxlength="150"
+        ></textarea>
+        <div id="the-count_comment">
+            <span id="current_comment">[...] characters left</span>
+        <label for="your-question">Your Answer:</label>
+        <textarea
+          name="your-question"
+          class="your-question"
+          cols="30"
+          rows="5"
+          maxlength="150"
+        ></textarea>
+        <div id="the-count_comment">
+            <span id="current_comment">[...] characters left</span>
+        <label for="tag">Tag:</label>
+        <input type="text" name="tag" id="tag" />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer-navbar">
+      <a href="index.html">
+        <img src="./assets/home.png" alt="filled home button" />
+      </a>
+      <a href="bookmarks.html">
+        <img
+          src="./assets/bookmark_transparent.png"
+          alt="transparent bookmark button"
+        />
+      </a>
+      <a href="form.html">
+        <img src="./assets/add_filled.png" alt="transparent form button " />
+      </a>
+      <a href="profile.html">
+        <img src="./assets/profile.png" alt="transparent profile button" />
+      </a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

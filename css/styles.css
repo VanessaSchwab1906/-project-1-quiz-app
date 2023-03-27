@@ -103,6 +103,16 @@ main {
 #question-card-4 {
   margin-bottom: 100px;
 }
+
+/* FORM */
+label {
+  display: block;
+}
+
+textarea {
+  display: block;
+}
+
 /* FOOTER NAVBAR */
 
 .footer-navbar {
