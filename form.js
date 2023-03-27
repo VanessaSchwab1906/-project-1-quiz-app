@@ -37,16 +37,19 @@ form.addEventListener("submit", (event) => {
 
   document.body.append(newSection);
 });
-// Add Fuctionality to button on new Card
-// const button = document.querySelector('[data-js="button"]');
-// const hiddenAnswer = document.querySelector('[data-js="hidden-answer"]');
 
-// button.addEventListener("click", () => {
-//   hiddenAnswer.toggleAttribute("hidden");
-//   button.textContent = "Hide answer";
-//   if (hiddenAnswer.hasAttribute("hidden")) {
-//     button.textContent = "Show answer";
-//   } else {
-//     button.textContent = "Hide answer";
-//   }
-// });
+// CHARACTERS COUNT
+
+const questionElement = document.querySelector('[data-js="questionArea"]');
+const amountLeft = document.querySelector('[data-js="amountLeft"]');
+const maxLength = questionElement.getAttribute("maxlength");
+
+const updateAmountLeft = (value) => {
+  amountLeft.innerText = value;
+};
+
+updateAmountLeft(maxLength);
+
+questionElement.addEventListener("input", () => {
+  updateAmountLeft(maxLength - questionElement.value.length);
+});

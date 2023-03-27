@@ -25,23 +25,27 @@
         <label for="your-question">Your Question:</label>
         <textarea
           name="question"
-          class="your-question"
+          class="textarea"
           cols="30"
           rows="5"
           maxlength="150"
+          data-js="questionArea"
         ></textarea>
-        <div id="the-count_comment">
-            <span id="current_comment">[...] characters left</span>
+        <small class="character-count"
+          >(<span data-js="amountLeft"></span> characters left)</small
+        >
         <label for="your-question">Your Answer:</label>
         <textarea
           name="answer"
-          class="your-question"
+          class="textarea"
           cols="30"
           rows="5"
           maxlength="150"
+          data-js="answerArea"
         ></textarea>
-        <div id="the-count_comment">
-            <span id="current_comment">[...] characters left</span>
+        <small class="character-count"
+          >(<span data-js="amountLeft"></span> characters left)</small
+        >
         <label for="tag">Tag:</label>
         <input type="text" name="tag" id="tag" />
         <button type="submit">Submit</button>
