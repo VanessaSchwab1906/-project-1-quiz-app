@@ -38,18 +38,33 @@ form.addEventListener("submit", (event) => {
   document.body.append(newSection);
 });
 
-// CHARACTERS COUNT
+// CHARACTERS COUNT (Question-Area)
 
-const questionElement = document.querySelector('[data-js="questionArea"]');
-const amountLeft = document.querySelector('[data-js="amountLeft"]');
-const maxLength = questionElement.getAttribute("maxlength");
+const questionElementQ = document.querySelector('[data-js="questionArea"]');
+const amountLeftQ = document.querySelector('[data-js="amountLeft"]');
+const maxLengthQ = questionElementQ.getAttribute("maxlength");
 
-const updateAmountLeft = (value) => {
-  amountLeft.innerText = value;
+const updateAmountLeftQ = (value) => {
+  amountLeftQ.innerText = value;
 };
 
-updateAmountLeft(maxLength);
+updateAmountLeftQ(maxLengthQ);
 
-questionElement.addEventListener("input", () => {
-  updateAmountLeft(maxLength - questionElement.value.length);
+questionElementQ.addEventListener("input", () => {
+  updateAmountLeftQ(maxLengthQ - questionElementQ.value.length);
+});
+
+// CHARACTERS COUNT (Answer-Area)
+const questionElementA = document.querySelector('[data-js="answerArea"]');
+const amountLeftA = document.querySelector('[data-js="amountLeftA"]');
+const maxLengthA = questionElementA.getAttribute("maxlength");
+
+const updateAmountLeftA = (value) => {
+  amountLeftA.innerText = value;
+};
+
+updateAmountLeftA(maxLengthA);
+
+questionElementA.addEventListener("input", () => {
+  updateAmountLeftA(maxLengthA - questionElementA.value.length);
 });

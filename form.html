@@ -22,32 +22,34 @@
     </header>
     <main>
       <form data-js="form">
-        <label for="your-question">Your Question:</label>
+        <label for="your-question" class="label">Your Question:</label>
         <textarea
           name="question"
           class="textarea"
           cols="30"
-          rows="5"
+          rows="3"
           maxlength="150"
           data-js="questionArea"
         ></textarea>
         <small class="character-count"
-          >(<span data-js="amountLeft"></span> characters left)</small
+          ><span data-js="amountLeft"></span> characters left</small
         >
+        <br />
         <label for="your-question">Your Answer:</label>
         <textarea
           name="answer"
           class="textarea"
           cols="30"
-          rows="5"
+          rows="3"
           maxlength="150"
           data-js="answerArea"
         ></textarea>
         <small class="character-count"
-          >(<span data-js="amountLeft"></span> characters left)</small
+          ><span data-js="amountLeftA"></span> characters left</small
         >
+        <br />
         <label for="tag">Tag:</label>
-        <input type="text" name="tag" id="tag" />
+        <input type="text" name="tag" id="tag" /> <br />
         <button type="submit">Submit</button>
       </form>
     </main>

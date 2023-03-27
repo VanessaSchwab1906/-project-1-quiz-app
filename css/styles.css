@@ -112,6 +112,21 @@ label {
 
 textarea {
   display: block;
+  background-color: #ffbf81;
+  border: 2px solid #ffbf81;
+  border-radius: none;
+}
+
+.character-count {
+  font-size: 12px;
+  float: right;
+}
+
+input {
+  display: block;
+  background-color: #ffbf81;
+  border: 2px solid #ffbf81;
+  border-radius: none;
 }
 
 /* FOOTER NAVBAR */
