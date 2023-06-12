@@ -6,14 +6,27 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
+
 body {
-  /* background-color: #ff86c8; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  /* Apply the gradient to the html element */
   background: #ffdc5e(241, 236, 122);
   background: linear-gradient(
     0deg,
     rgba(241, 236, 122, 1) 20%,
     rgba(246, 167, 184, 1) 80%
   );
+  background-repeat: no-repeat;
   font-family: "Raleway", sans-serif;
   color: black;
 }
@@ -39,11 +52,15 @@ h1 {
 
 /* QUESTION CARD 1-4 */
 
+
 main {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(241, 236, 122, 1) 20%, rgba(246, 167, 184, 1) 80%);
+  background-repeat: no-repeat;
 }
 
 .question-card {
@@ -56,7 +73,7 @@ main {
   align-items: center;
   align-content: flex-start;
   margin-top: 10px;
-  margin-left: 35px;
+  margin-
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -112,6 +129,15 @@ main {
 }
 
 /* FORM */
+
+.form-main {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 label {
   display: block;
   font-weight: bold;
@@ -162,6 +188,7 @@ button {
   bottom: 0;
   display: flex;
   justify-content: space-around;
+  flex-shrink:0;
 }
 
 .footer-navbar a {
