@@ -1,3 +1,5 @@
+# Recap Project 1 & 2: Quiz App 
+
 This project was my first mobile web application - a quiz app.
 The layout is created with HTML and CSS, the interactivity with JavaScript.
 
