@@ -15,27 +15,29 @@ form.addEventListener("submit", (event) => {
 
   const newSection = document.createElement("section");
   newSection.classList.add("question-card");
-  newSection.innerHTML = `<section>
-    <img
-      src="./assets/bookmark_transparent.png"
-      alt="bookmark transparent"
-      id="bookmark-2"
-      data-js="bookmark-2"
-    />
+  newSection.innerHTML = `
+    <section>
+      <img
+        src="./assets/bookmark_transparent.png"
+        alt="bookmark transparent"
+        id="bookmark-2"
+        data-js="bookmark-2"
+      />
     </section>
     <p>
-    ${questionValue} <br />
+      ${questionValue} <br />
     </p>
     <section>
-    <button type="button" data-js="button-new-card">Show answer</button>
+      <button type="button" data-js="button-new-card">Show answer</button>
     </section>
     <p hidden data-js="hidden-answer-new-card">${answerValue}</p>
     <section class="tag-section">
-    <a href="#">${tagValue}</a>
+      <a href="#">${tagValue}</a>
     </section>
-    `;
-  // add card to body
-  document.body.append(newSection);
+  `;
+
+  // add card to main element
+  document.querySelector(".form-main").appendChild(newSection);
 
   // toggle function for show answer button
   const buttonNewCard = document.querySelector('[data-js="button-new-card"]');

@@ -10,6 +10,14 @@ body {
   background-color: #f4adb2;
   font-family: "Raleway", sans-serif;
   color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* HEADER */
@@ -87,10 +95,8 @@ main {
 /* FOOTER NAVBAR */
 
 .footer-navbar {
-  position: fixed;
   width: 100%;
   background-color: #ffdc5e;
-  bottom: 0;
   display: flex;
   justify-content: space-around;
 }
